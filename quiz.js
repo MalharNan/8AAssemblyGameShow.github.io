@@ -108,7 +108,7 @@ function showResults() {
     let numCorrect = 0;
 
 
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+//     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     window.location = 'riddles.html'
 }
 
@@ -193,7 +193,7 @@ const myQuestions = [{
 
 
 function checkIfRight(index, answerContainers) {
-    var correct = ["c", "c", "c"];
+    var correct = ["c", "c", "b", "a", "b"];
     const answerContainer = answerContainers[index];
     const selector = `input[name=question${index}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
