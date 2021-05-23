@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Congratulations!!</title>
+<link rel="stylesheet" href="style.css" /><link rel="stylesheet" href="end.css" />
+</head>
+<body onload="showCard()">
+
+    <div class="mainContainer">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Congratulations!</h2>
+              <h3 id="name"></h3>
+              <h3 id="score"></h3>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p id="lead">Check the results on the leaderboard!</p>
+            </div>
+            <div class="flip-card-back">
+              <h2>Credits</h2> 
+              <p>Arjun</p> 
+              <p>Pradyun</p>
+              <p>Ishaan</p>
+              <p>Malhar</p>
+              <p>Aarav</p>
+              <p>Kunal</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCeYPksaP6J-uRrEkJtvUYrH10JnsS8Xjk",
+    authDomain: "a-assembly-quiz.firebaseapp.com",
+    projectId: "a-assembly-quiz",
+    storageBucket: "a-assembly-quiz.appspot.com",
+    messagingSenderId: "463181174018",
+    appId: "1:463181174018:web:79fe9eeb7289a5310b1e1b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="congrats.js"></script>
+</body>
+</html>
+

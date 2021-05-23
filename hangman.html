@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Hangman</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="index.js"></script>
+<div class="mainContainer"><h1 class="text-center">Hangman</h1>
+        <div class="hangContainer">
+            
+            <div class="float-left">
+              Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span>
+            </div>
+            <div class="text-center">
+              <img id='hangmanPic' src="./images/0.jpg" alt="">
+              <p>Guess the word:</p>
+              <p id="wordSpotlight">The word to be guessed goes here</p>
+              <div id="keyboard"></div>
+            </div> 
+          </div>
+          </div>
+          <script src='hangman.js'></script>
+
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCeYPksaP6J-uRrEkJtvUYrH10JnsS8Xjk",
+    authDomain: "a-assembly-quiz.firebaseapp.com",
+    projectId: "a-assembly-quiz",
+    storageBucket: "a-assembly-quiz.appspot.com",
+    messagingSenderId: "463181174018",
+    appId: "1:463181174018:web:79fe9eeb7289a5310b1e1b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
+

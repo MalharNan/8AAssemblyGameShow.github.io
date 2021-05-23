@@ -1,0 +1,134 @@
+:root{
+    --blue-1: #0C0032;
+    --blue-2: #190061;
+    --blue-3: #240090;
+    --blue-4: #007BD1;
+    --grey: #282828;
+    --contrast: white;
+}
+body::-webkit-scrollbar{
+    width: 0.25rem
+}
+
+body::-webkit-scrollbar-track{
+    background: black;
+}
+
+.mainContainer{
+    position: fixed;
+    background-image: linear-gradient(var(--blue-1), var(--blue-4));
+    left: 0;
+    top: 0;
+    width: 96%;
+    height: 92%;
+    border: solid var(--grey) 2vw;
+    padding-top: 0;
+}
+
+.LOGO{
+    margin-top: 4vh;
+    margin-left: 41%;
+    border: solid;
+}
+#name{
+    color: white;
+}
+#score{
+    color: whitesmoke;
+}
+.hangContainer{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding: auto;
+}
+/* #hangmanPic{
+    margin-left: 30vh;
+    
+} */
+.credits{
+    color: white;
+    font-size: large;
+}
+.creditList{
+    text-align: center;
+    list-style-type: none;
+}
+
+form {
+    /* border: 3px solid #f1f1f1; */
+    width: 50%;
+    position: absolute;
+    left: 25%;
+margin-top: 20vh;
+    top: 25%;
+    text-align: center;
+}
+/* Is that you m? */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=button]{
+    background-color: rgb(55, 151, 175);
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.5;
+  }
+input[type=button]:hover{
+    opacity: 1;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+.lab{
+    transition: all 500ms ease-in-out;
+}
+
+label{
+    transition: 1s ease-in-out;
+    color: var(--contrast);
+}
+
+
+
+
+
+
+
+h1 {
+    /* margin: 300px auto; */
+    margin-top: 1.3%;
+    text-align: center;
+    color: white;
+    font-size: 10vh;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MATH HELP NEEDED ?? */
+
+/* h1 {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                 0 3px 0 #ccc, 0 4px 0 #ccc,
+                 0 5px 0 #ccc, 0 6px 0 #ccc,
+                 0 7px 0 #ccc, 0 8px 0 #ccc,
+                 0 9px 0 #ccc, 0 10px 0 #ccc,
+                 0 11px 0 #ccc, 0 12px 0 #ccc,
+                 0 20px 30px rgba(0, 0, 0, 0.5);
+} */
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Quiz - Entry Form</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="mainContainer">
+        <img src="schoolLogo.png" alt="DAIS Logo" width="250vw" height="250vh" class="LOGO">
+
+        <form>
+            <div class="container">
+              <div class="lab"><label for="userName" class="lab"><b>Please Enter Your Name</b></label></div>
+              <input type="text" placeholder="Enter name" id="userName" required>
+        
+                  
+              <div class="lab"><label for="std" class="lab"><b>Please enter your standard</b></label></div>
+              <input type="text" placeholder="Enter standard" id="std" required>
+
+              <div class="lab"><label for="email" class="lab"><b>Please enter your email</b></label></div>
+              <input type="text" placeholder="Enter school email" id="email" required>
+
+              <input type = "button" onclick = "updateDB()" value = "Submit">
+            </div></div>
+          
+          </form>
+    </div>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCeYPksaP6J-uRrEkJtvUYrH10JnsS8Xjk",
+    authDomain: "a-assembly-quiz.firebaseapp.com",
+    projectId: "a-assembly-quiz",
+    storageBucket: "a-assembly-quiz.appspot.com",
+    messagingSenderId: "463181174018",
+    appId: "1:463181174018:web:79fe9eeb7289a5310b1e1b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
+

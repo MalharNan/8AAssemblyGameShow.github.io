@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>GameShow - Riddles</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body onload="getNextQuestion()">
+
+    <div class="mainContainer">
+        <!-- <h1>Design</h1>  -->
+  
+        <div class="quizContainer" style="padding-top: 0;">
+            <h1 id="questionHolder"></h1>
+            <form>
+                
+
+                <input type="text" name="userAnswer" id="userAnswer">
+                <input type="button" onclick="continueGame()" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCeYPksaP6J-uRrEkJtvUYrH10JnsS8Xjk",
+            authDomain: "a-assembly-quiz.firebaseapp.com",
+            projectId: "a-assembly-quiz",
+            storageBucket: "a-assembly-quiz.appspot.com",
+            messagingSenderId: "463181174018",
+            appId: "1:463181174018:web:79fe9eeb7289a5310b1e1b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="riddles.js"></script>
+</body>
+
+</html>
