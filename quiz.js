@@ -5,10 +5,9 @@ let seconds = 0;
 
 
 function callOnLoad() {
-    timer(1);
+    timer(0.5);
 
 }
-
 
 var numCorrect = 0;
 var questionAnswered = false
@@ -16,7 +15,6 @@ var questionAnswered = false
 function timer(startingMinutes) {
     if (!questionAnswered) {
         let time = startingMinutes * 60; //60 seconds
-
         const countdownEl = document.getElementById("Display");
 
         function padding(n){
@@ -25,7 +23,7 @@ function timer(startingMinutes) {
 
         function updateCountdown() {
             minutes = Math.floor(time / 60);
-            seconds = padding(time % 60)
+            seconds = padding(time%60)
 
             countdownEl.innerHTML = `${minutes}:${seconds}`;
             time--; //time = time -1
@@ -33,7 +31,7 @@ function timer(startingMinutes) {
                 secondsLeft = minutes * 60 + seconds;
                 countdownEl.style.color = "white";
                 calculateScore(minutes, seconds)
-                startingMinutes = 1
+                startingMinutes = 0.5
                 time = startingMinutes * 60;
                 alert("TIME IS UP");
                 countdownEl.style.color = "white";
