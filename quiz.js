@@ -19,12 +19,13 @@ function timer(startingMinutes) {
 
         const countdownEl = document.getElementById("Display");
 
-
-
+        function padding(n){
+            return n > 9 ? "" + n : "0" + n;
+        }
 
         function updateCountdown() {
             minutes = Math.floor(time / 60);
-            seconds = time % 60
+            seconds = padding(time % 60)
 
             countdownEl.innerHTML = `${minutes}:${seconds}`;
             time--; //time = time -1
