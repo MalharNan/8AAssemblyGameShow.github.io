@@ -34,9 +34,10 @@ function timer(startingMinutes) {
                 calculateScore(minutes, seconds)
                 startingMinutes = 1
                 time = startingMinutes * 60;
-
                 alert("TIME IS UP");
+                countdownEl.style.color = "white";
                 showSlide(currentSlide + 1);
+                countdownEl.style.color = "white";
             }
             if (minutes == 0 && 10 > seconds && seconds >= 0) {
                 countdownEl.style.color = "red";
