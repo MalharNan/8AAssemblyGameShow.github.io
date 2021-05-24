@@ -37,6 +37,7 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
                 calculateScore(minutes, seconds)
                 startingMinutes = 0.5
                 time = startingMinutes * 60;
+                buttonPressed = false;
             }
 
             
@@ -62,9 +63,6 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
     } else { calculateScore(seconds) }
 }
 
-function calculateScore(timeLeft) {
-    console.log(timeLeft)
-}
 
 // (function() {
 
