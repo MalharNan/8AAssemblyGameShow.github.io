@@ -50,6 +50,7 @@ function updateHangmanPicture() {
 
 function checkIfGameWon() {
   if (wordStatus === answer) {
+updateScoreDB(30)
     document.getElementById('keyboard').innerHTML = 'Correct';
     updateScoreDB(30)
     window.location = './congrats.html'
