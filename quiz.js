@@ -34,7 +34,6 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
             if (buttonPressed){
                 secondsLeft = minutes * 60 + seconds;
                 countdownEl.style.color = "white";
-                calculateScore(minutes, seconds)
                 startingMinutes = 0.5
                 time = startingMinutes * 60;
                 buttonPressed = false;
