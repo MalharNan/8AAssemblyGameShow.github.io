@@ -1,7 +1,6 @@
 var numCorrect;
 var secondsLeft;
 let minutes = 0;
-var questionAnswered = false;
 let seconds = 0;
 
 
