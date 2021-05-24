@@ -16,7 +16,7 @@ var questionAnswered = false
 function timer(startingMinutes) {
     
 const countdownEl = document.getElementById("Display");
-countdownEl.innerHTML = `${minutes}:${seconds}`;
+
     
     if (!questionAnswered) {
         let time = startingMinutes * 60; //60 seconds
@@ -30,7 +30,7 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
             minutes = Math.floor(time / 60);
             seconds = time % 60
             console.log(minutes, seconds)
-
+countdownEl.innerHTML = `${minutes}:${seconds}`;
 
             
             if (minutes == 0 && seconds == 0) { //timer ends
