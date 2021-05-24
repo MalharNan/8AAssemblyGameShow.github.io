@@ -38,6 +38,9 @@ function timer(startingMinutes) {
                 showSlide(currentSlide + 1);
                 countdownEl.style.color = "white";
             }
+            if(minutes == 0 && seconds>10){
+            countdownEl.style.color = "white";
+            }
             if (minutes == 0 && 10 > seconds && seconds >= 0) {
                 countdownEl.style.color = "red";
             }
