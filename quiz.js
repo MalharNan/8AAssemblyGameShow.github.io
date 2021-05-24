@@ -26,11 +26,13 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
 
 
         function updateCountdown() {
+            time--; //time = time -1
             minutes = Math.floor(time / 60);
             seconds = time % 60
+            console.log(minutes, seconds)
 
 
-            time--; //time = time -1
+            
             if (minutes == 0 && seconds == 0) { //timer ends
                 secondsLeft = minutes * 60 + seconds;
                 countdownEl.style.color = "white";
