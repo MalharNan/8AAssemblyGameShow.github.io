@@ -9,7 +9,7 @@ function callOnLoad() {
 
 }
 
-
+var buttonPressed = false;
 var numCorrect = 0;
 var questionAnswered = false
 
@@ -31,6 +31,13 @@ const countdownEl = document.getElementById("Display");
             seconds = time % 60
             console.log(time)
 countdownEl.innerHTML = `${minutes}:${seconds}`;
+            if (buttonPressed){
+                secondsLeft = minutes * 60 + seconds;
+                countdownEl.style.color = "white";
+                calculateScore(minutes, seconds)
+                startingMinutes = 0.5
+                time = startingMinutes * 60;
+            }
 
             
             if (minutes == 0 && seconds == 0) { //timer ends
@@ -137,7 +144,8 @@ function showNextSlide() {
 
     check(answerContainers)
     showSlide(currentSlide + 1);
-    questionAnswered = true
+    questionAnswered = true;
+    buttonPressed = true;
 }
 
 function showPreviousSlide() {
