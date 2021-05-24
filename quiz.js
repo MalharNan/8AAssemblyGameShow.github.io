@@ -5,17 +5,17 @@ let seconds = 0;
 
 
 function callOnLoad() {
-    timer(1);
+    timer(0.5);
 
 }
-
+const countdownEl = document.getElementById("Display");
 var buttonPressed = false;
 var numCorrect = 0;
 var questionAnswered = false
 
 function timer(startingMinutes) {
     
-const countdownEl = document.getElementById("Display");
+
 
     
     if (!questionAnswered) {
@@ -43,15 +43,14 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
             if (minutes == 0 && seconds == 0) { //timer ends
                 secondsLeft = minutes * 60 + seconds;
                 countdownEl.style.color = "white";
-                calculateScore(minutes, seconds)
-                startingMinutes = 1
-                time = startingMinutes * 60;
-
                 alert("TIME IS UP");
+                countdownEl.style.color = "white";
                 showSlide(currentSlide + 1);
-            }
-            if (minutes == 0 && 10 > seconds && seconds >= 0) {
-                countdownEl.style.color = "red";
+                countdownEl.style.color = "white";
+                startingMinutes = 0.5
+                time = startingMinutes * 60;
+                countdownEl.style.color = "white";
+
             }
 
         }
@@ -59,8 +58,8 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
 
 
         setInterval(updateCountdown, 1000)
-    } else { calculateScore(seconds) }
-}
+    }  }
+
 
 
 // (function() {
@@ -138,6 +137,7 @@ function showSlide(n) {
 function showNextSlide() {
     secondsLeft = minutes * 60 + seconds;
     const answerContainers = quizContainer.querySelectorAll('.answers');
+    countdownEl.style.color = "white";
 
     check(answerContainers)
     showSlide(currentSlide + 1);
