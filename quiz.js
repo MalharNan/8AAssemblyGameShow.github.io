@@ -12,19 +12,18 @@ function callOnLoad() {
 
 var numCorrect = 0;
 var questionAnswered = false
-
 function timer(startingMinutes) {
     if (!questionAnswered) {
         let time = startingMinutes * 60; //60 seconds
+
         const countdownEl = document.getElementById("Display");
 
-        function padding(n){
-            return n > 9 ? "" + n : "0" + n;
-        }
+
+
 
         function updateCountdown() {
             minutes = Math.floor(time / 60);
-            seconds = padding(time%60)
+            seconds = time % 60
 
             countdownEl.innerHTML = `${minutes}:${seconds}`;
             time--; //time = time -1
@@ -32,15 +31,11 @@ function timer(startingMinutes) {
                 secondsLeft = minutes * 60 + seconds;
                 countdownEl.style.color = "white";
                 calculateScore(minutes, seconds)
-                startingMinutes = 0.5
+                startingMinutes = 1
                 time = startingMinutes * 60;
+
                 alert("TIME IS UP");
-                countdownEl.style.color = "white";
                 showSlide(currentSlide + 1);
-                countdownEl.style.color = "white";
-            }
-            if(minutes == 0 && seconds>10){
-            countdownEl.style.color = "white";
             }
             if (minutes == 0 && 10 > seconds && seconds >= 0) {
                 countdownEl.style.color = "red";
@@ -51,9 +46,9 @@ function timer(startingMinutes) {
 
 
         setInterval(updateCountdown, 1000)
-    } else { calculateScore(seconds) 
-           console.log("I am a test code protocol"}
+    } else { calculateScore(seconds) }
 }
+
 
 function calculateScore(timeLeft) {
     console.log(timeLeft)
