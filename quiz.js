@@ -50,7 +50,8 @@ function timer(startingMinutes) {
 
 
         setInterval(updateCountdown, 1000)
-    } else { calculateScore(seconds) }
+    } else { calculateScore(seconds) 
+           console.log("I am a test code protocol"}
 }
 
 function calculateScore(timeLeft) {
