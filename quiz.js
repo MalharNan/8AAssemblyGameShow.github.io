@@ -2,10 +2,11 @@ var numCorrect;
 var secondsLeft;
 let minutes = 0;
 let seconds = 0;
+var questionAnswered = false;
 
 
 function callOnLoad() {
-    timer(0.5);
+    timer(1);
 
 }
 
