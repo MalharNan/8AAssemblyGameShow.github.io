@@ -14,10 +14,13 @@ var numCorrect = 0;
 var questionAnswered = false
 
 function timer(startingMinutes) {
+    
+const countdownEl = document.getElementById("Display");
+countdownEl.innerHTML = `${minutes}:${seconds}`;
+    
     if (!questionAnswered) {
         let time = startingMinutes * 60; //60 seconds
 
-        const countdownEl = document.getElementById("Display");
 
 
 
@@ -26,7 +29,7 @@ function timer(startingMinutes) {
             minutes = Math.floor(time / 60);
             seconds = time % 60
 
-            countdownEl.innerHTML = `${minutes}:${seconds}`;
+
             time--; //time = time -1
             if (minutes == 0 && seconds == 0) { //timer ends
                 secondsLeft = minutes * 60 + seconds;
