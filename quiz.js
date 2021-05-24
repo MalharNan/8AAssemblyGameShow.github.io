@@ -29,7 +29,7 @@ const countdownEl = document.getElementById("Display");
             time--; //time = time -1
             minutes = Math.floor(time / 60);
             seconds = time % 60
-            console.log(minutes, seconds)
+            console.log(time)
 countdownEl.innerHTML = `${minutes}:${seconds}`;
 
             
