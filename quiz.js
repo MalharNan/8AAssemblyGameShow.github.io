@@ -4,14 +4,15 @@ let minutes = 0;
 let seconds = 0;
 
 
-
 function callOnLoad() {
     timer(1);
 
 }
 
+
 var numCorrect = 0;
 var questionAnswered = false
+
 function timer(startingMinutes) {
     if (!questionAnswered) {
         let time = startingMinutes * 60; //60 seconds
@@ -48,7 +49,6 @@ function timer(startingMinutes) {
         setInterval(updateCountdown, 1000)
     } else { calculateScore(seconds) }
 }
-
 
 function calculateScore(timeLeft) {
     console.log(timeLeft)
@@ -108,7 +108,7 @@ function showResults() {
     let numCorrect = 0;
 
 
-//     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     window.location = 'riddles.html'
 }
 
@@ -193,7 +193,7 @@ const myQuestions = [{
 
 
 function checkIfRight(index, answerContainers) {
-    var correct = ["c", "c", "b", "a", "b"];
+    var correct = ["c", "c", "c"];
     const answerContainer = answerContainers[index];
     const selector = `input[name=question${index}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
