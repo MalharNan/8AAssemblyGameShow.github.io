@@ -12,6 +12,7 @@ let wordStatus = null;
 
 function randomWord() {
   answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
+alert("A giant tech company")
 }
 
 function generateButtons() {
