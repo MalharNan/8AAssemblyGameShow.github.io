@@ -32,7 +32,6 @@ function timer(startingMinutes) {
             time--; //time = time -1
             minutes = Math.floor(time / 60);
             seconds = fixFunnyNumbers(time % 60)
-            console.log(time)
 countdownEl.innerHTML = `${minutes}:${seconds}`;
             if (buttonPressed){
                 secondsLeft = minutes * 60 + seconds;
@@ -54,6 +53,12 @@ countdownEl.innerHTML = `${minutes}:${seconds}`;
                 time = startingMinutes * 60;
                 countdownEl.style.color = "white";
 
+            }
+            if(seconds<11){
+                countdownEl.style.color = "red";
+            }
+            else if(seconds>11){
+                countdownEl.style.color = "white";
             }
 
         }
