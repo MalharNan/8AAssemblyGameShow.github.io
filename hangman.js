@@ -1,11 +1,13 @@
 var programming_languages = [
 	"teleportation",
   "interstellar",
-  "Asteroid",
+  "asteroid",
+	"revolutionary",
+	"constellation"
 	
 ]
 
-var prompts = ["Sci fi or magic instant transport", "The earth is dying; Cooper must save the day!", "Rocks in space"]
+var prompts = ["Sci fi or magic instant transport", "The earth is dying; Cooper must save the day!", "Rocks in space", "innovative and world changing", "pattern of stars"]
 
 let answer = '';
 let maxWrong = 6;
