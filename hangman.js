@@ -1,10 +1,11 @@
 var programming_languages = [
 	"teleportation",
-  "google",
-  "apple"
+  "interstellar",
+  "Asteroid",
+	
 ]
 
-var prompts = ["Sci fi or magic instant transport", "", ""]
+var prompts = ["Sci fi or magic instant transport", "The earth is dying; Cooper must save the day!", "Rocks in space"]
 
 let answer = '';
 let maxWrong = 6;
