@@ -8,6 +8,9 @@ function callOnLoad() {
     timer(0.5);
 
 }
+function fixFunnyNumbers(n){
+    return n > 9 ? "" + n : "0" + n;
+}
 const countdownEl = document.getElementById("Display");
 var buttonPressed = false;
 var numCorrect = 0;
@@ -28,7 +31,7 @@ function timer(startingMinutes) {
         function updateCountdown() {
             time--; //time = time -1
             minutes = Math.floor(time / 60);
-            seconds = time % 60
+            seconds = fixFunnyNumbers(time % 60)
             console.log(time)
 countdownEl.innerHTML = `${minutes}:${seconds}`;
             if (buttonPressed){
