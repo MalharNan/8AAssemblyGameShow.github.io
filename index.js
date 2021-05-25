@@ -6,7 +6,7 @@ function updateDB(){
     std = document.getElementById("std").value;
     classId = document.getElementById("email").value;
     if(userid == "" || std == "" || classId == ""){
-    alert("Some fields are empty")}
+    alert("Some fields are empty")}else{
 
     db.collection("users").add({
         name: userid,
@@ -22,5 +22,5 @@ function updateDB(){
     })
     .catch((error) => {
         console.error("Error adding document: ", error);
-    });
+    });}
 }
