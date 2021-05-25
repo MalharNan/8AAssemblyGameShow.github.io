@@ -5,6 +5,8 @@ function updateDB(){
     userid = document.getElementById("userName").value;
     std = document.getElementById("std").value;
     classId = document.getElementById("email").value;
+    if(userid == "" || std == "" || classId == ""){
+    alert("Some fields are empty")}
 
     db.collection("users").add({
         name: userid,
