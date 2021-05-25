@@ -7,7 +7,7 @@ var programming_languages = [
 	
 ]
 
-var prompts = ["Sci fi or magic instant transport", "The earth is dying; Cooper must save the day!", "Rocks in space", "innovative and world changing", "pattern of stars"]
+var prompts = ["(Sci-Fi) Instant transport", "The earth is dying; Cooper must save the day!", "Rocks in space", "Innovative and world changing", "Pattern of stars"]
 
 let answer = '';
 let maxWrong = 6;
