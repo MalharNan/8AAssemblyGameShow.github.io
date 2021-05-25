@@ -1,8 +1,10 @@
 var programming_languages = [
-	"amazon",
+	"teleportation",
   "google",
   "apple"
 ]
+
+var prompts = ["Sci fi or magic instant transport", "", ""]
 
 let answer = '';
 let maxWrong = 6;
@@ -11,8 +13,9 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
-alert("A giant tech company")
+	var randNum = Math.floor(Math.random() * programming_languages.length)
+  answer = programming_languages[randNum];
+alert(randNum)
 }
 
 function generateButtons() {
