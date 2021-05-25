@@ -6,7 +6,7 @@ var titleRef = document.getElementById("questionHolder")
 
 
 function resetTextBox() {
-    document.getElementById("userAnswer").innerHTML = "";
+    document.getElementById("userAnswer").value = "";
 }
 
 function continueGame() {
@@ -25,6 +25,8 @@ function continueGame() {
 
 function getNextQuestion() {
     titleRef.innerHTML = questionList[index]
+    document.getElementById("userAnswer").value = "";
+    resetTextBox()
 }
 
 function endGame() {
