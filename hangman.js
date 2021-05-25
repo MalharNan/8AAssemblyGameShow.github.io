@@ -15,7 +15,7 @@ let wordStatus = null;
 function randomWord() {
 	var randNum = Math.floor(Math.random() * programming_languages.length)
   answer = programming_languages[randNum];
-alert(randNum)
+alert(prompts[randNum])
 }
 
 function generateButtons() {
