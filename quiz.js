@@ -122,9 +122,6 @@ function showResults() {
     check(answerContainers)
 
     let numCorrect = 0;
-
-
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     window.location = 'riddles.html'
 }
 
