@@ -7,7 +7,7 @@ var programming_languages = [
 	
 ]
 
-var prompts = ["Hint: (Sci-Fi) Instant transport", "Hint: The earth is dying; Cooper must save the day!", "Hint: Rocks in space", "Hint: Innovative and world changing", "Hint: A Pattern of stars"]
+var prompts = ["Hint: (Sci-Fi) Instant transport", "Hint: The earth is dying; Cooper must save the day!", "Hint: Rocks in space", "Hint: Synonym of innovative and world changing", "Hint: A Pattern of stars"]
 
 let answer = '';
 let maxWrong = 6;
