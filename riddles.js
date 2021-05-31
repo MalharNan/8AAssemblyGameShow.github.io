@@ -47,7 +47,7 @@ function isGameOver() {
 function calculateScore(){
   var userAnswer = document.getElementById("userAnswer").value;
   if (userAnswer.toLowerCase() == answerList[index].toLowerCase()){
-    updateScoreDB(1)
+    updateScoreDB(15)
   }
 }
 
