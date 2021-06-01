@@ -122,7 +122,7 @@ function showResults() {
     check(answerContainers)
 
     let numCorrect = 0;
-    window.location = 'riddles.html'
+    window.location = 'hangman.html'
 }
 
 function showSlide(n) {
