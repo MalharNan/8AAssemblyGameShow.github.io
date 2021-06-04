@@ -5,8 +5,12 @@
 <title>Hangman</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <script src="index.js"></script>
+<body onload="playMusic()">
+    <script src="hangman.js"></script>
+        <audio controls loop id="music">
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 <div class="mainContainer"><h1 class="text-center">Hangman</h1>
         <div class="hangContainer">
             
