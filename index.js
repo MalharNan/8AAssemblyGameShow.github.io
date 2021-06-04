@@ -1,5 +1,10 @@
 var userid, addBtn, std, classId;
 
+function playMusic(){
+myMusic=document.getElementById("music")
+myMusic.play()
+}
+
 function updateDB(){
     var db = firebase.firestore();
     userid = document.getElementById("userName").value;
