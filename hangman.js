@@ -6,6 +6,10 @@ var programming_languages = [
 	"constellation"
 	
 ]
+function playMusic(){
+myMusic=document.getElementById("music")
+myMusic.play()
+}
 
 var prompts = ["Hint: (Sci-Fi) Instant transport", "Hint: The earth is dying; Cooper must save the day!", "Hint: Rocks in space", "Hint: Synonym of innovative and world changing", "Hint: A Pattern of stars"]
 
