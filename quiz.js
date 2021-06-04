@@ -6,7 +6,12 @@ let seconds = 0;
 
 function callOnLoad() {
     timer(0.5);
+    playMusic()
 
+}
+function playMusic(){
+myMusic=document.getElementById("music")
+myMusic.play()
 }
 function fixFunnyNumbers(n){
     return n > 9 ? "" + n : "0" + n;
