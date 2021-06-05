@@ -1,8 +1,13 @@
 var programming_languages = [
-	"amazon",
-  "google",
-  "apple"
+	"teleportation",
+  "interstellar",
+  "asteroid",
+	"revolutionary",
+	"constellation"
+	
 ]
+
+var prompts = ["Hint: (Sci-Fi) Instant transport", "Hint: The earth is dying; Cooper must save the day!", "Hint: Rocks in space", "Hint: Synonym of innovative and world changing", "Hint: A Pattern of stars"]
 
 let answer = '';
 let maxWrong = 6;
@@ -11,7 +16,9 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
+	var randNum = Math.floor(Math.random() * programming_languages.length)
+  answer = programming_languages[randNum];
+alert(prompts[randNum])
 }
 
 function generateButtons() {
